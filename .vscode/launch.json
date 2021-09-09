@@ -5,19 +5,14 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: Flask",
+            "name": "Python: Django",
             "type": "python",
             "request": "launch",
-            "module": "flask",
-            "env": {
-                "FLASK_APP": "app.py",
-                "FLASK_ENV": "development"
-            },
+            "program": "${workspaceFolder}\\firepark\\manage.py",
             "args": [
-                "run",
-                "--no-debugger"
+                "runserver"
             ],
-            "jinja": true
+            "django": true
         }
     ]
 }
